@@ -1,0 +1,28 @@
+Cara menjalankan skrip ETL:
+
+1. Buat virtual environment agar dependencies terpisah dari sistem global:
+   python -m venv env
+
+2. Aktifkan virtual environment (saya gunakan Windows) :
+   env\Scripts\activate
+
+3. Install semua dependencies di `requirements.txt`:
+   pip install -r requirements.txt
+
+4. Jalankan skrip ETL:
+   python main.py
+
+Cara menjalankan unit test:
+
+1. Pastikan modul unittest tersedia (biasanya sudah ada di Python).
+2. Jalankan pengujian:
+   python -m unittest discover tests
+
+Cara menjalankan test coverage:
+
+1. Install package coverage jika belum terpasang:
+   pip install coverage
+
+2. Jalankan tes sekaligus hitung coverage:
+   coverage run -m unittest discover tests
+   coverage report -m
